@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name ="viewport" content = "width = devices-width, initial-scale = 1.0">
+	<meta http-equiv = "X-UA-Compatible" centent = "ie = edge">
+
+	<script defer 
+	src="https://use.fontawesome.com/releases/v5.3.1/js/all.js">
+	</script>
+
+
+
+	<title>Yi's portfolio</title>
+</head>
+
+<style>
+	body{
+	padding:0px;
+	margin:0px;
+
+
+}
+
+.content{
+	margin:0px;
+	padding:0px;
+	margin-top:70px;
+	margin-left: 15%;
+	margin-right:20%;
+}
+
+img{
+	
+	width:40%;
+	float:left;
+	border-radius:10px;
+}
+
+.introduction{
+	width:40%;
+	float:right;
+	line-height: 24px;
+}
+
+.introduction p{
+	margin-left:20px;
+}
+
+
+.p2{
+	margin-bottom: 30px;
+}
+
+.btn{
+	background-color: #6699dd;
+	color:white;
+	padding:8px 12px;
+	text-decoration:none;
+	border:0;
+	border-radius:10px;
+	
+}
+.btn:hover{
+	background-color:#336699;
+}
+
+p a {
+	text-decoration:none;
+	color: #6699FF;
+}
+
+
+nav{
+width:100%;
+height:60px;
+
+}
+
+nav p {
+font-family: arial;
+color: #6699FF;
+font-size: 30px;
+line-height: 30px;
+font-weight: bold;
+padding:0px 20px;
+float: left;
+}
+
+ ul {
+	list-style: none;
+	float: left;
+	
+}
+
+ ul li{
+
+	float: left;
+	position: relative;
+	
+}
+ ul li a {
+	display:block;
+	text-decoration: none;
+	color:black;
+	font-family: arial;
+	color: #6699FF;
+	font-size: 18px;
+	padding:20px 20px;
+
+
+}
+
+ul li:hover{
+	display: block;
+}
+ul li a:hover{
+	background-color:#f3f3f3;
+}
+
+ul li ul{
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	padding:8px;
+	border-radius:0px 0px 5px 5px;
+}
+ ul li ul li {
+	display: none;
+	width:150px;
+
+	
+	}
+
+
+ ul li:hover ul li{
+	display:block;
+}
+
+
+ul li ul li a {
+	padding:8px 12px;
+	}
+
+ul li ul li a:hover {
+	padding:8px 12px;
+	background-color: #f3f3f3;
+	}
+
+/* media queries*/
+
+@media screen and (max-width:500px){
+	nav p {
+		font-size:28px;
+		margin-bottom:0px;
+	}
+	ul li a {
+		font-size:15px;
+	}
+	h3{
+		font-size:18px;
+	}
+	p{
+		font-size:13px;
+	}
+	img{
+	width:100%;
+	border-radius:10px;
+}
+
+.content{
+	margin:0px;
+	padding:0px;
+	margin-top:70px;
+	margin-left: 10%;
+	margin-right:10%;
+}
+.introduction{
+	width:100%;
+	line-height: 24px;
+}
+.btn{
+	font-size:14px;
+	padding:5px 10px;
+	margin-left:25%;
+}
+
+}
+
+
+
+
+
+</style>
+<body>
+	<div class = "wrapper">
+			
+			<nav>
+				<p><a href = "index.html">Yi's Portfolio</a></p>
+				<ul>
+					<li><a href="personal.html">About Me</a></li>
+
+						<li><a>My Portfolios</a>
+						<ul>
+							<li><a href="webservies.html">Portfolio One</a></li>
+							<li><a href="technicalDocumentation.html">Portfolio Two</a></li>
+							<li><a href="surveyForm.html">Portfolio Three</a></li>
+						</ul>
+						</li>
+
+					<li><a href = "contactMe.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class= "content">
+				<img src="Me.JPEG" alt="My Picture">
+				<div class = "introduction" >
+					<h3>Hello, welcome to my page </h3>
+					<p>Hello! My name is Yi Tao. I came from China to the United States 4 years ago. I can speak both <strong>English</strong> and <strong>Chinese</strong>. After coming to the United States, I graduated with a degree in Computer Engineering (AS) from Hillsborough Community College. At present, I am a legal resident green card holder and aspiring to become an American citizen.</p>
+
+					<p class = "p2">Currently, I am transferring to the University of South Florida with a GPA of 3.9, where I will earn a Bachelor of Science in Computer Science. My career goal is to become a web engineer. As of right now, I am studying to be a front end developer. I have learned <strong>HTML</strong> and <strong>CSS</strong> on W3 school and freeCodeCamp, while my next language I am studying is JavaScript. </p> 
+
+					<p>
+					I am <strong>deadline driven</strong> and a <strong>fast learner</strong>. I like setting new personal goals for myself. I enjoy being active when I can. My hobbies include reading scientific articles, programming, and enjoying the beauty of nature and art. I enjoy web development because it is both an art and a science. It has been something that I have always aspired to learn.</p>
+
+					<a href="contactMe.html" class = "btn"> Contact Me</a>
+				</div>
+				
+			</div>
+
+	</div>
+</body>
+</html>

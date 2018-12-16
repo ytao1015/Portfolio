@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<style type="text/css">
+		body{
+			margin:0px;
+			padding:0px;
+			background-color: #336699;
+			font-family:'Open Sans', sans-serif;
+			
+			
+		}
+		h1{
+			text-align:center;
+			font-size:50px;
+			color:white;
+		}
+		.wrapper{
+			border-radius:25px;
+			background-color: white;
+			width:50%;
+			padding:10px 20px;
+			margin-left:auto;
+			margin-right:auto;
+			font-size:16px;
+		}
+		#description{
+			text-align:center;
+			font-size:22px;
+		}
+		form div {
+			margin:20px;
+		}
+		#name-label{
+			margin-right:20px;
+
+		}
+		#email-label{
+			margin-right:20px;
+			margin-top:20px;
+		}
+		#number-label{
+			margin-right:30px;
+			margin-top:20px;
+		}
+		#email{
+			margin-top:20px;
+		}
+		#age{
+			margin-top:20px;
+		}
+
+		.btn{
+			padding-top:10px;
+			text-align:center;
+		}
+	
+		#submit{
+			padding:5px 15px;
+			border:none;
+			border-radius:10%;
+			font-size:20px;
+			font-weight: bold;
+			background-color:#0099cc;
+			color:white;
+
+		}
+		#submit:hover{
+			background-color:#336699;
+		}
+		#comments{
+			margin-left:20px;
+		}
+		
+	</style>
+</head>
+<body> 
+	<!--Title-->
+	<h1 id = "title">Survey Form</h1>
+	<!--Form-->
+	<div class = "wrapper">
+		<p id = "description">Let us know how we can improve freeCodeCamp</p>
+			<form id = "survey-form">
+				<!--user information-->
+				<div class = "user">
+					<label id = "name-label" for = "name">*Name: </label>
+					<input id = "name" type="text" name="name" placeholder="Enter your name here" required="" >
+
+					<br>
+
+					<label  id = "email-label" for= "email">*Email:</label>
+					<input  id = "email" class = "inpute-field" type="email" name="email" required="" placeholder="Enter your Email">
+
+					<br>
+
+					<label id = "number-label" for = "age">*Age:</label>
+					<input id = "age" type="number" name="age" min = "1" max="125" placeholder="Enter your Age" required="">
+					<br>
+				</div>
+				<!--Drop down select-->
+				<div class= "dropdownBoxes1">
+					<label for = "role">Which option best describes your current role?</label>
+					<select id = "role" class = "dropdown" name="role">
+						<option disabled = "" selected="" value = ""> Select an option</option>
+						<option value = "student">Student</option>
+						<option value = "job">Full Time Job</option>
+						<option value = "partTime">Part Time Job</option>
+						<option value = "other">other</option>
+					</select>
+					<br>
+				</div>
+				<!--radio check for recomment to frends-->
+				<div class= "radioCheck">
+					<fieldset class = "recommentation">
+						<legend>*How likely is that you would recommend freeCodeCamp to a friend</legend>
+						<input type="radio" name="chooseone" value = "definitely"> <label for = "definitely">Definitely</label>
+						<input type="radio" name="chooseone" value = "maybe"> <label for = "maybe">Maybe</label>
+						<input type="radio" name="chooseone" calue = "not"> <label for = "not">Not Sure</label>
+					</fieldset>
+					<br>
+				</div>
+				<!--Dropdown for what do you like most n FCC-->
+				<div class = "dropdownBox2">
+					<label for = "most-like">What do you like most in FCC</label>
+					<select id = "most-like" class = "dropdown" name="mostlike">
+						<option disabled = "" selected="" value = ""> Select an option</option>
+						<option value = "challenge">Challenge</option>
+						<option value = "projects">Projects</option>
+						<option value = "community">Community</option>
+						<option value = "openSource">Open Source</option>
+					</select>
+					<br>
+				</div>
+				<!--Checkboxes for things that should be improved in the future-->
+				<div clasa = "checkBox">
+					<fieldset class = "improvement">
+						<legend>Things that should be improved in the future (Check all that apply):</legend>
+							<input type="checkbox" name="front-end"> Front-end Projects
+							<input type="checkbox" name="back-end"> Back-end Projects
+							<input type="checkbox" name="DataV"> Data Visualization
+							<input type="checkbox" name="challenge"> Challenge
+							<input type="checkbox" name="openSource"> Open Source Community
+							<br>
+							<input type="checkbox" name="videos"> Videos
+							<input type="checkbox" name="cityMeetups"> City Meetups
+							<input type="checkbox" name="wiki"> Wiki
+							<input type="checkbox" name="forum"> Forum
+							<input type="checkbox" name="courses"> Additional Courses
+					</fieldset>
+					<br>
+				</div>
+				<!--comments-->
+				<div class = "textArea">
+					<label for = "comments">Any Comments or Suggestions?</label>
+
+					<textarea id = "comments" class = "input-filed" placeholder="Enter your comment here..." style = "height:90px;"></textarea>
+					<br>
+				</div>
+
+					<div class = "btn">
+				<button id = "submit" type = "submit">Submit</button>
+					</div>
+	</form>
+	</div>
+
+</body>
+</html>
